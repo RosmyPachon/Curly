@@ -1,0 +1,56 @@
+CRITICAL - 2023-03-18 00:06:54 --> Undefined variable $departamentos
+in APPPATH\Controllers\Departamentos.php on line 30.
+ 1 APPPATH\Controllers\Departamentos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Controllers\\Departamentos.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->eliminados()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 00:07:01 --> Undefined variable $departamentos
+in APPPATH\Controllers\Departamentos.php on line 30.
+ 1 APPPATH\Controllers\Departamentos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Controllers\\Departamentos.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->eliminados()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 00:20:29 --> Undefined variable $departamento
+in APPPATH\Controllers\Departamentos.php on line 30.
+ 1 APPPATH\Controllers\Departamentos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamento', 'APPPATH\\Controllers\\Departamentos.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->eliminados()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 00:23:30 --> Undefined variable $departamento
+in APPPATH\Controllers\Departamentos.php on line 30.
+ 1 APPPATH\Controllers\Departamentos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamento', 'APPPATH\\Controllers\\Departamentos.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->eliminados()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 00:23:40 --> Undefined variable $departamento
+in APPPATH\Controllers\Departamentos.php on line 30.
+ 1 APPPATH\Controllers\Departamentos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamento', 'APPPATH\\Controllers\\Departamentos.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->eliminados()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 00:23:42 --> Undefined variable $departamento
+in APPPATH\Controllers\Departamentos.php on line 30.
+ 1 APPPATH\Controllers\Departamentos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamento', 'APPPATH\\Controllers\\Departamentos.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->eliminados()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 00:24:11 --> Undefined variable $departamento
+in APPPATH\Controllers\Departamentos.php on line 30.
+ 1 APPPATH\Controllers\Departamentos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamento', 'APPPATH\\Controllers\\Departamentos.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->eliminados()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 00:24:58 --> Undefined variable $departamento
+in APPPATH\Controllers\Departamentos.php on line 30.
+ 1 APPPATH\Controllers\Departamentos.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamento', 'APPPATH\\Controllers\\Departamentos.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->eliminados()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

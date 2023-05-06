@@ -1,0 +1,191 @@
+ERROR - 2023-03-28 14:36:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[object HTMLInputElement]
+ LIMIT 1' at line 5 in C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `municip...', 0)
+#1 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `municip...')
+#2 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `municip...')
+#3 C:\xampp\htdocs\proyecto\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municip...', Array, false)
+#4 C:\xampp\htdocs\proyecto\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto\app\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto\app\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('[object HTMLInp...')
+#8 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('[object HTMLInp...')
+#9 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 14:36:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '[object HTMLInputElement]
+ LIMIT 1' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municipios`.*
+FROM `municipios`
+JOIN `departamentos` ON `municipios`.`id_dpto` = `departamentos`.`id`
+JOIN `paises` ON `departamentos`.`id_pais` = `paises`.`id`
+WHERE municipios.id[object HTMLInputElement]
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('[object HTMLInputElement]')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('[object HTMLInputElement]')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 14:36:53 --> mysqli_sql_exception: Unknown column 'municipios.id1' in 'where clause' in C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `municip...', 0)
+#1 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `municip...')
+#2 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `municip...')
+#3 C:\xampp\htdocs\proyecto\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municip...', Array, false)
+#4 C:\xampp\htdocs\proyecto\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto\app\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto\app\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('1')
+#8 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('1')
+#9 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 14:36:53 --> Unknown column 'municipios.id1' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municipios`.*
+FROM `municipios`
+JOIN `departamentos` ON `municipios`.`id_dpto` = `departamentos`.`id`
+JOIN `paises` ON `departamentos`.`id_pais` = `paises`.`id`
+WHERE `municipios`.`id1` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 14:37:58 --> mysqli_sql_exception: Unknown column 'municipios.id1' in 'where clause' in C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `municip...', 0)
+#1 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `municip...')
+#2 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `municip...')
+#3 C:\xampp\htdocs\proyecto\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municip...', Array, false)
+#4 C:\xampp\htdocs\proyecto\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto\app\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto\app\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('1')
+#8 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('1')
+#9 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 14:37:58 --> Unknown column 'municipios.id1' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municipios`.*
+FROM `municipios`
+JOIN `departamentos` ON `municipios`.`id_dpto` = `departamentos`.`id`
+JOIN `paises` ON `departamentos`.`id_pais` = `paises`.`id`
+WHERE `municipios`.`id1` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 14:40:09 --> mysqli_sql_exception: Unknown column 'municipios.id1' in 'where clause' in C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `municip...', 0)
+#1 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `municip...')
+#2 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `municip...')
+#3 C:\xampp\htdocs\proyecto\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municip...', Array, false)
+#4 C:\xampp\htdocs\proyecto\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto\app\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto\app\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('1')
+#8 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('1')
+#9 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 14:40:09 --> Unknown column 'municipios.id1' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municipios`.*
+FROM `municipios`
+JOIN `departamentos` ON `municipios`.`id_dpto` = `departamentos`.`id`
+JOIN `paises` ON `departamentos`.`id_pais` = `paises`.`id`
+WHERE `municipios`.`id1` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('1')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 14:44:49 --> mysqli_sql_exception: Unknown column 'municipios.id6' in 'where clause' in C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `municip...', 0)
+#1 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `municip...')
+#2 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `municip...')
+#3 C:\xampp\htdocs\proyecto\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municip...', Array, false)
+#4 C:\xampp\htdocs\proyecto\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\proyecto\app\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\proyecto\app\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('6')
+#8 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('6')
+#9 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+#10 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 14:44:49 --> Unknown column 'municipios.id6' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `municipios`.*
+FROM `municipios`
+JOIN `departamentos` ON `municipios`.`id_dpto` = `departamentos`.`id`
+JOIN `paises` ON `departamentos`.`id_pais` = `paises`.`id`
+WHERE `municipios`.`id6` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\MunicipiosModel.php(86): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Municipios.php(92): App\Models\MunicipiosModel->traer_municipioDptoPais('6')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('6')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 14:47:07 --> Too few arguments to function App\Models\MunicipiosModel::seleccionar_Municipio(), 1 passed in C:\xampp\htdocs\proyecto\app\Controllers\Municipios.php on line 92 and exactly 2 expected
+in APPPATH\Models\MunicipiosModel.php on line 60.
+ 1 APPPATH\Controllers\Municipios.php(92): App\Models\MunicipiosModel->seleccionar_Municipio('6')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->buscarDptoPaisPorIdMuni('6')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 15:10:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`db_taller`.`empleados`, CONSTRAINT `empleados_ibfk_2` FOREIGN KEY (`id_municipio`) REFERENCES `municipios` (`id`)) in C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `emplead...', 0)
+#1 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `emplead...')
+#2 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `emplead...')
+#3 C:\xampp\htdocs\proyecto\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `emplead...', Array, false)
+#4 C:\xampp\htdocs\proyecto\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\proyecto\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\proyecto\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\proyecto\app\Controllers\Empleados.php(85): CodeIgniter\Model->update('40', Array)
+#8 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(934): App\Controllers\Empleados->insertar()
+#9 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#10 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\proyecto\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 15:10:06 --> Cannot add or update a child row: a foreign key constraint fails (`db_taller`.`empleados`, CONSTRAINT `empleados_ibfk_2` FOREIGN KEY (`id_municipio`) REFERENCES `municipios` (`id`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `empleados` SET `nombres` = :nombres:, `apellidos` = :apellidos:, `nacimiento` = :nacimiento:, `id_municipio` = :id_municipio:, `id_cargo` = :id_cargo:
+WHERE `empleados`.`id` IN :empleados.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Empleados.php(85): CodeIgniter\Model->update('40', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Empleados->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

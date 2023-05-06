@@ -1,0 +1,601 @@
+ERROR - 2023-03-12 19:51:05 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'bd_taller' in C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bd_taller', 3306, '', 0)
+#1 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\proyecto\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\proyecto\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\proyecto\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\proyecto\app\Controllers\Paises.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(934): App\Controllers\Paises->index()
+#8 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paises))
+#9 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\proyecto\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'bd_taller' in C:\xampp\htdocs\proyecto\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\proyecto\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\proyecto\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\proyecto\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\proyecto\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\proyecto\app\Controllers\Paises.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(934): App\Controllers\Paises->index()
+#7 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paises))
+#8 C:\xampp\htdocs\proyecto\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\proyecto\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-12 19:51:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'bd_taller'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `paises`
+WHERE `estado` = :estado:', [...], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Paises.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Paises->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paises))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:36:59 --> Class "App\Models\DepartamentosModel" not found
+in APPPATH\Controllers\Departamentos.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Departamentos->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:37:45 --> Class "App\Models\DepartamentosModel" not found
+in APPPATH\Controllers\Departamentos.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Departamentos->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:37:49 --> Class "App\Models\DepartamentosModel" not found
+in APPPATH\Controllers\Departamentos.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Departamentos->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:38:02 --> Class "App\Models\DepartamentosModel" not found
+in APPPATH\Controllers\Departamentos.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Departamentos->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:38:31 --> Class "App\Models\DepartamentosModel" not found
+in APPPATH\Controllers\Departamentos.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Departamentos->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:39:36 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:39:40 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:40:09 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:40:10 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:40:10 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:40:40 --> Class "App\Controllers\PaisesModel" not found
+in APPPATH\Controllers\Departamentos.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Departamentos->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:41:42 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:41:44 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:42:18 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:42:19 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 20:43:18 --> Undefined array key "id_pais"
+in APPPATH\Views\departamentos\departamentos.php on line 32.
+ 1 APPPATH\Views\departamentos\departamentos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pais"', 'APPPATH\\Views\\departamentos\\departamentos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\departamentos\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/departamentos/departamentos', [], true)
+ 5 APPPATH\Controllers\Departamentos.php(19): view('/departamentos/departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Departamentos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Departamentos))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:03:32 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:04:33 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:04:33 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:04:34 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:06:30 --> Class "App\Controllers\DepartamentosModel" not found
+in APPPATH\Controllers\Municipios.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Municipios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:07:57 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:08:10 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:10:16 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:10:16 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:10:17 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:10:17 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:10:17 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:10:17 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:10:17 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:11:48 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:12:28 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:13:33 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:13:36 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 32.
+ 1 APPPATH\Views\municipios\municipios.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:19:39 --> Undefined variable $departamentos
+in APPPATH\Views\municipios\municipios.php on line 23.
+ 1 APPPATH\Views\municipios\municipios.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Views\\municipios\\municipios.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:21:29 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:22:08 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:22:09 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 21:58:37 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:01:19 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:01:20 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:01:20 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:01:21 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:01:21 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:01:21 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:01:21 --> Undefined array key "id_departamentos"
+in APPPATH\Views\municipios\municipios.php on line 27.
+ 1 APPPATH\Views\municipios\municipios.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_departamentos"', 'APPPATH\\Views\\municipios\\municipios.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\municipios\\municipios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/municipios/municipios', [], true)
+ 5 APPPATH\Controllers\Municipios.php(19): view('/municipios/municipios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:13:00 --> Undefined variable $departamentos
+in APPPATH\Views\empleados\empleados.php on line 31.
+ 1 APPPATH\Views\empleados\empleados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Views\\empleados\\empleados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\empleados\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/empleados/empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(19): view('/empleados/empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:15:59 --> Undefined variable $departamentos
+in APPPATH\Views\empleados\empleados.php on line 31.
+ 1 APPPATH\Views\empleados\empleados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Views\\empleados\\empleados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\empleados\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/empleados/empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(19): view('/empleados/empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:16:00 --> Undefined variable $departamentos
+in APPPATH\Views\empleados\empleados.php on line 31.
+ 1 APPPATH\Views\empleados\empleados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Views\\empleados\\empleados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\empleados\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/empleados/empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(19): view('/empleados/empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:16:00 --> Undefined variable $departamentos
+in APPPATH\Views\empleados\empleados.php on line 31.
+ 1 APPPATH\Views\empleados\empleados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Views\\empleados\\empleados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\empleados\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/empleados/empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(19): view('/empleados/empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:16:00 --> Undefined variable $departamentos
+in APPPATH\Views\empleados\empleados.php on line 31.
+ 1 APPPATH\Views\empleados\empleados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Views\\empleados\\empleados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\empleados\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/empleados/empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(19): view('/empleados/empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:16:00 --> Undefined variable $departamentos
+in APPPATH\Views\empleados\empleados.php on line 31.
+ 1 APPPATH\Views\empleados\empleados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Views\\empleados\\empleados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\empleados\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/empleados/empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(19): view('/empleados/empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:16:01 --> Undefined variable $departamentos
+in APPPATH\Views\empleados\empleados.php on line 31.
+ 1 APPPATH\Views\empleados\empleados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Views\\empleados\\empleados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\empleados\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/empleados/empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(19): view('/empleados/empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-12 22:16:01 --> Undefined variable $departamentos
+in APPPATH\Views\empleados\empleados.php on line 31.
+ 1 APPPATH\Views\empleados\empleados.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $departamentos', 'APPPATH\\Views\\empleados\\empleados.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\empleados\\empleados.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/empleados/empleados', [], true)
+ 5 APPPATH\Controllers\Empleados.php(19): view('/empleados/empleados', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

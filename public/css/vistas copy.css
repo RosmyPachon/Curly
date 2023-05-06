@@ -1,0 +1,35 @@
+.titulo{
+    color: #93623c;
+    text-align: center;
+}
+.regresar_btn{
+    height: 2.5rem;
+    width: 7rem;
+    
+}
+.botones{
+    margin: 0px 50px;
+    height: 80px;
+}
+
+.table-responsive{
+    margin: 20px 50px;
+}
+
+.agregar{
+    border-color: none;
+    color: white;
+    background-color: #93623c;
+}
+.regresar{
+    background-color: #cc8956;
+    color: white;
+}
+
+/* .fondo{
+    background-image: url(/public/img/fondo.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */

@@ -1,0 +1,84 @@
+CRITICAL - 2023-03-30 12:49:21 --> Call to undefined method App\Models\MunicipiosModel::elimina_municipio
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Municipios.php(74): CodeIgniter\Model->__call('elimina_municipio', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->eliminar('4', 'E')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 12:49:21 --> Call to undefined method App\Models\MunicipiosModel::elimina_municipio
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Municipios.php(74): CodeIgniter\Model->__call('elimina_municipio', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Municipios->eliminar('4', 'E')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Municipios))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:05:10 --> Class "App\Models\UsuariosModel" not found
+in APPPATH\Controllers\Usuarios.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuarios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:05:10 --> Class "App\Models\UsuariosModel" not found
+in APPPATH\Controllers\Usuarios.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuarios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:44:55 --> Class "App\Models\UsuariosModel" not found
+in APPPATH\Controllers\Usuarios.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuarios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:44:55 --> Class "App\Models\UsuariosModel" not found
+in APPPATH\Controllers\Usuarios.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuarios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:45:42 --> Class "App\Models\UsuariosModel" not found
+in APPPATH\Controllers\Usuarios.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuarios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:45:42 --> Class "App\Models\UsuariosModel" not found
+in APPPATH\Controllers\Usuarios.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuarios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:45:43 --> Class "App\Models\UsuariosModel" not found
+in APPPATH\Controllers\Usuarios.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuarios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:45:43 --> Class "App\Models\UsuariosModel" not found
+in APPPATH\Controllers\Usuarios.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Usuarios->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:46:30 --> Undefined variable $paises
+in APPPATH\Views\usuarios\usuarios.php on line 30.
+ 1 APPPATH\Views\usuarios\usuarios.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paises', 'APPPATH\\Views\\usuarios\\usuarios.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/usuarios/usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(19): view('/usuarios/usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 15:46:31 --> Undefined variable $paises
+in APPPATH\Views\usuarios\usuarios.php on line 30.
+ 1 APPPATH\Views\usuarios\usuarios.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paises', 'APPPATH\\Views\\usuarios\\usuarios.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/usuarios/usuarios', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(19): view('/usuarios/usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
